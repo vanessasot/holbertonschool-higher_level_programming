@@ -7,7 +7,7 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """Initialize the instance."""
-        self.__size = size
+        self.size = size
         self.position = position
 
     @property
