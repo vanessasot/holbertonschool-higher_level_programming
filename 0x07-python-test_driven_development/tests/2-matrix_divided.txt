@@ -44,7 +44,7 @@ matrix as None:
     >>> matrix_divided(None, 1)
     Traceback (most recent call last):
     ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
+    TypeError: matrix must be a matrix (list of lists)of integers/floats
 
 matrix as tuple:
 
