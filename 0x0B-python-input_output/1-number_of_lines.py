@@ -4,8 +4,6 @@
 
 def number_of_lines(filename=""):
     """Function that return the number of lines of the text line"""
-    line_number = 0
-    with open("my_file_0.txt") as myfile:
-        for line in myfile:
-            line_number += 1
-        return line_number
+    with open("my_file_0.txt", encoding="utf-8") as myfile:
+            line = len(myfile.readlines())
+    return line
