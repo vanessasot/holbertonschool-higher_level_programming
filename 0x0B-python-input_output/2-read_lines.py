@@ -9,5 +9,5 @@ def read_lines(filename="", nb_lines=0):
         for i, line in enumerate(lines):
             if nb_lines <= 0 or nb_lines >= len(lines):
                 print(line, end="")
-            if i < nb_lines:
+            elif i < nb_lines:
                 print(line, end="")
