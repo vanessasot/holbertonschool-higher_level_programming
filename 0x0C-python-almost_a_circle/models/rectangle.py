@@ -89,3 +89,18 @@ class Rectangle(Base):
         """Print data"""
         return "[Rectangle] ({}) {}/{} - "\
                "{}/{}".format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args):
+        """Assigns an argument to each attribute"""
+        if args:
+            for arg in range(len(args)):
+                if arg == 0:
+                    self.id = args[arg]
+                if arg == 1:
+                    self.__width = args[arg]
+                if arg == 2:
+                    self.__height = args[arg]
+                if arg == 3:
+                    self.__x = args[arg]
+                if arg == 4:
+                    self.__y = args[arg]
