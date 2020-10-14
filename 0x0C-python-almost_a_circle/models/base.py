@@ -41,3 +41,13 @@ class Base:
         else:
             newlist = []
             return newlist
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Returns an instance with all attributes already set"""
+        if cls.__name__ == "Rectangle":
+            value = cls(2, 7)
+        elif cls.__name__ == "Square":
+            value = cls(4)
+        value.update(**dictionary)
+        return value
